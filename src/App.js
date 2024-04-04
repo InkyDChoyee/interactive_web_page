@@ -1,23 +1,14 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import data from "./problem_1_data.json";
 
 function App() {
   const [colors, setColors] = useState([]);
   const [selectedColor, setSelectedColor] = useState("");
 
   useEffect(() => {
-    fetchColors();
+    setColors(data["product_colors"]);
   }, []);
-
-  const fetchColors = async () => {
-    try {
-      const response = await fetch("/problem_1_data.json");
-      const data = await response.json();
-      setColors(data["product_colors"]);
-    } catch (error) {
-      console.error("데이터를 불러오는 중 오류가 발생했습니다:", error);
-    }
-  };
 
   const changeProductImage = (e) => {
     setSelectedColor(e.target.value);
