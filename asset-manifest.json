@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/github.io/interactive_web_page/static/css/main.cedcb8bb.css",
-    "main.js": "/github.io/interactive_web_page/static/js/main.525338aa.js",
-    "static/media/sirbot.png": "/github.io/interactive_web_page/static/media/sirbot.33fa82b264b358201054.png",
-    "static/media/sirbot_red.png": "/github.io/interactive_web_page/static/media/sirbot_red.99386afed9b906ffdaa1.png",
-    "static/media/sirbot_green.png": "/github.io/interactive_web_page/static/media/sirbot_green.c6fc861985085913dfcf.png",
-    "static/media/sirbot_blue.png": "/github.io/interactive_web_page/static/media/sirbot_blue.9dea8fcbd8735847ea98.png",
-    "index.html": "/github.io/interactive_web_page/index.html",
-    "main.cedcb8bb.css.map": "/github.io/interactive_web_page/static/css/main.cedcb8bb.css.map",
-    "main.525338aa.js.map": "/github.io/interactive_web_page/static/js/main.525338aa.js.map"
+    "main.css": "/interactive_web_page/static/css/main.365ccaf8.css",
+    "main.js": "/interactive_web_page/static/js/main.24985784.js",
+    "static/media/sirbot.png": "/interactive_web_page/static/media/sirbot.33fa82b264b358201054.png",
+    "static/media/sirbot_red.png": "/interactive_web_page/static/media/sirbot_red.99386afed9b906ffdaa1.png",
+    "static/media/sirbot_green.png": "/interactive_web_page/static/media/sirbot_green.c6fc861985085913dfcf.png",
+    "static/media/sirbot_blue.png": "/interactive_web_page/static/media/sirbot_blue.9dea8fcbd8735847ea98.png",
+    "index.html": "/interactive_web_page/index.html",
+    "main.365ccaf8.css.map": "/interactive_web_page/static/css/main.365ccaf8.css.map",
+    "main.24985784.js.map": "/interactive_web_page/static/js/main.24985784.js.map"
   },
   "entrypoints": [
-    "static/css/main.cedcb8bb.css",
-    "static/js/main.525338aa.js"
+    "static/css/main.365ccaf8.css",
+    "static/js/main.24985784.js"
   ]
 }
