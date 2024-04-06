@@ -1,47 +1,77 @@
-import "./App.css";
-import React, { useState, useEffect } from "react";
+import * as React from "react";
+import { Box, ThemeProvider } from "@mui/material";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import Select from "@mui/material/Select";
 import data from "./problem_1_data.json";
 
-function App() {
-  const [colors, setColors] = useState([]);
-  const [selectedColor, setSelectedColor] = useState("");
+export default function ColorSelect() {
+  const [selectedColor, setSelectedColor] = React.useState("");
+  const [colors, setColors] = React.useState([]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     setColors(data["product_colors"]);
   }, []);
 
-  const changeProductImage = (e) => {
-    setSelectedColor(e.target.value);
+  const handleChange = (event) => {
+    setSelectedColor(event.target.value);
   };
 
   return (
-    <div className="App">
-      <h1>제품 색상 선택하기</h1>
-      {colors.map((color) => (
-        <div key={color.p_color}>
-          <input
-            type="radio"
-            id={color.p_color}
-            name="color"
-            value={color.p_color}
-            checked={selectedColor === color.p_color}
-            onChange={changeProductImage}
-          />
-          <label htmlFor={color.p_color}>{color.p_color}</label>
-        </div>
-      ))}
-      <div id="productImageContainer">
-        {selectedColor && (
-          <img
-            src={
-              colors.find((color) => color.p_color === selectedColor)?.imageURL
-            }
-            alt="product_img"
-          />
-        )}
+    <div className="container">
+      <div className="selectBox">
+        <Box sx={{ minWidth: 150 }}>
+          <FormControl fullWidth>
+            <InputLabel id="color-select-label">색상 선택</InputLabel>
+            <Select
+              labelId="color-select-label"
+              id="color-select"
+              value={selectedColor}
+              label="색상 선택"
+              onChange={handleChange}
+            >
+              {colors.map((color) => (
+                <MenuItem key={color.p_color} value={color.p_color}>
+                  {color.p_color}
+                </MenuItem>
+              ))}
+            </Select>
+          </FormControl>
+        </Box>
+      </div>
+      <div className="imgBox">
+        <ThemeProvider
+          theme={{
+            palette: {
+              primary: {
+                main: "#007FFF",
+                dark: "#0066CC",
+              },
+            },
+          }}
+        >
+          <Box
+            sx={{
+              width: "auto",
+              height: "auto",
+              borderRadius: 5,
+              bgcolor: "#fff",
+            }}
+          >
+            {selectedColor && (
+              <img
+                src={require(`${
+                  colors.find((color) => color.p_color === selectedColor)
+                    ?.imageURL
+                }`)}
+                style={{ width: "100%", height: "100%" }}
+                alt="product_img"
+              />
+            )}
+          </Box>
+        </ThemeProvider>
       </div>
     </div>
   );
 }
-
-export default App;

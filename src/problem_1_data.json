@@ -2,15 +2,19 @@
   "product_colors": [
     {
       "p_color": "빨강",
-      "imageURL": "https://example.com/red-product.jpg"
+      "imageURL": "./resources/sirbot_red.png"
     },
     {
       "p_color": "파랑",
-      "imageURL": "https://example.com/blue-product.jpg"
+      "imageURL": "./resources/sirbot_blue.png"
     },
     {
       "p_color": "녹색",
-      "imageURL": "https://example.com/green-product.jpg"
+      "imageURL": "./resources/sirbot_green.png"
+    },
+    {
+      "p_color": "기본",
+      "imageURL": "./resources/sirbot.png"
     }
   ]
 }
