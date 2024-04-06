@@ -1,0 +1,16 @@
+{
+  "product_colors": [
+    {
+      "p_color": "빨강",
+      "imageURL": "./resources/sirbot_red.png"
+    },
+    {
+      "p_color": "파랑",
+      "imageURL": "./resources/sirbot_blue.png"
+    },
+    {
+      "p_color": "녹색",
+      "imageURL": "./resources/sirbot_green.png"
+    }
+  ]
+}

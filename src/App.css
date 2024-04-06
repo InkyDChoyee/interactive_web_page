@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.titleBox {
+    padding-right: 100px;
+    background-color: #fff;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: #3246c3;
+}
+
+nav {
+    height: 5vh;
+    background-color: #3246c3;
+    color: #fff;
+    text-align: center;
+    line-height: 3;
+}
+
+.content {
+    display: flex;
+    padding: 2vh;
+}
+
+.imgBox {
+    height: 80vh;
+    width: 50%;
+    border-radius: 15px;
+    border: 5px solid #aaa;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./resources/sirbot.png");
+    background-size: 68vh;
+    background-position: center;
+    background-color: #fff;
+}
+
+.imgBox img {
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.imgBox img.show {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.selectBox {
+    margin: 100px;
+    background-color: #fff;
+    padding: 20px;
+    width: 40%;
+    height: 25vh;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px #ccc;
+}
+
+.selectBox p{
+    margin: 20px 20px 40px 20px;
+    color: #aaa;
+}
