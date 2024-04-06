@@ -11,10 +11,6 @@
     {
       "p_color": "녹색",
       "imageURL": "./resources/sirbot_green.png"
-    },
-    {
-      "p_color": "기본",
-      "imageURL": "./resources/sirbot.png"
     }
   ]
 }
