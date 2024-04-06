@@ -20,7 +20,7 @@ export default function ColorSelect() {
   const handleChange = (event) => {
     setSelectedColor(event.target.value);
     setShowImage(false);
-    setTimeout(() => setShowImage(true));
+    setTimeout(() => setShowImage(true), 500);
   };
 
   return (
